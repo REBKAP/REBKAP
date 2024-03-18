@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
+    <link rel="icon" type="image/x-icon" href="https://prospero0.s3.us-east-2.amazonaws.com/favicon.ico">
+
+
+    <title>Sprintfolio</title>
+    <style>
+        body {
+            background-image: url('https://prospero0.s3.us-east-2.amazonaws.com/website/sprintfolio_background_1x.webp') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #FFFAF4;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        input[type="email"], 
+        input[type="password"] {
+            display: flex;
+            width: 456px;
+            height: 63px;
+            padding: 0px 20px;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            border: 1px solid rgba(138, 138, 138, 0.52);
+            background: #FFF;
+            margin: 10px auto; /* Centering and adding some vertical spacing */
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        h1{
+            font-family: 'Dela Gothic One', serif;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120.5%;
+            margin-bottom: 10px;
+        }
+
+        h3{
+            margin-top: 10px;
+            color: #20263B;
+            text-align: center;
+            font-family: 'Dela Gothic One', serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 117.8%; /* 37.696px */
+
+        }
+
+        .btn{
+            display: inline-flex;
+            padding: 6.009px 12.017px;
+            justify-content: center;
+            align-items: center;
+            gap: 6.009px;
+            border-radius: 18.026px;
+            border: 1.205px solid #000;
+            background: #E278D1;
+            box-shadow: 0px -0.75107px 0px 0px rgba(47, 43, 67, 0.10) inset, 0px 0.75107px 2.25322px 0px rgba(47, 43, 67, 0.10);
+        }
+
+        .navbar {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0; /* Explicitly set to make sure navbar starts at the very left */
+            width: 100%;
+            background-color: #20263B;
+            z-index: 1000;
+
+            }
+
+            .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-family: 'League Spartan', sans-serif;
+
+            }
+
+            .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+        @media (max-width: 767px) {
+            .two-column {
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://sprintfolio.com/"> About</a>
+        <a href="/tutorial">Tutorial</a>
+        <a href="https://discord.gg/768meBBHJJ">Discord</a>
+    </div>
+
+    <h1>career school for designers</h1>
+    <h3>personalized, and hands-on learning for every designer out there</h3>
+    <div class="container">
+        <form action="/" method="post">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+           
+            <button class="btn" type="submit">Login</button>
+        
+        </form>
+        <p>Don't have an account? <a href="/signup">Signup</a></p>
+        <p>Forgot your password? <a href="/reset"> Reset Here</a></p>
+  
+    </div>
+</body>
+</html>
+
+
+
+
+
