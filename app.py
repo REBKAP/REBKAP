@@ -19,6 +19,8 @@ import json
 from itsdangerous import URLSafeTimedSerializer
 from flask_mail import Mail
 from flask_mail import Message as FlaskMessage
+from dotenv import load_dotenv
+load_dotenv()
 
 
 #INITIALIZATIONS
