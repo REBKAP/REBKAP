@@ -69,7 +69,6 @@ Pygments==2.16.1
 python-dateutil==2.8.2
 python-dotenv==1.0.1
 python-http-client==3.3.7
-pywin32==306
 pyzmq==25.1.1
 requests==2.31.0
 requests-oauthlib==1.1.0
