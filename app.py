@@ -59,8 +59,8 @@ login_manager.login_view = 'index'
 
 #OpenAI API Key
 
-openai.api_key = os.environ.get("OPENAI_KEY")
-assistant_key = os.environ.get("OPENAI_ASSISTANT_KEY")
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+assistant_key = os.environ.get("OPENAI_API_KEY")
 
 #S3 Client Connection
 s3 = boto3.client(
