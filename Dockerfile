@@ -39,4 +39,10 @@ ENTRYPOINT ["/app/entrypoint.sh"]
 
 
 # CMD ["gunicorn", "--config", "gunicorn-cfg.py"]
-CMD ["python", "app.py"]
+# Ensure permissions and set the entrypoint script
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+ENTRYPOINT ["/app/entrypoint.sh"]
+
+# The command to run your application with Gunicorn
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
